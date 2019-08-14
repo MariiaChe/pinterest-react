@@ -1,0 +1,213 @@
+#navbar{
+    padding-top:5px;
+    display: flex;
+    flex-direction: row;
+    height: 65px;
+    background:white;
+}
+#navbar hr{
+    width: 100%;
+    border-top: 1px solid #efefef !important;
+    display: block;
+    margin-top: 0 !important;
+    border-bottom: 0;
+    border-left: 0;
+    unicode-bidi: isolate;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    overflow: hidden;
+    border-style: inset;
+    border-width: 1px;
+}
+#navbar img{
+    max-width: 100%;
+    height: auto;
+    justify-content: center;
+}
+#navbar .logo{
+    padding: 10px;
+    height: 48px;
+  
+   
+    border-radius: 50%;
+    margin-top:3px;
+    margin-left: 15px;
+  
+    margin-right: 15px;
+    width: 48px;
+    display: flex;
+}
+#navbar .logo:hover{
+    background: rgba(0, 0, 0, .06);
+}
+#navbar .border{
+    height:30px;
+    width:2px;
+    border-left:2px solid #efefef;
+    box-sizing:border-box;
+    margin-left:16px;
+    display: block;
+}
+#navbar .search{
+    margin-top: 5px;
+    height: 70%;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    display: flex;
+    flex-basis: 55%;
+    background: #efefef;
+    
+}
+.icon-search{
+    padding-top:6px;
+    padding-left:10px;
+    flex-basis: 6%;
+}
+.icon-search img{
+    width: 58%;
+}
+
+#navbar input{
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    height: 100%;
+    width: 100%;
+    background: #efefef;
+    border:0;
+   
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    font-weight: bold;
+    font-size:16px;
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+    font-weight: bold;
+    font-size:16px;
+  }
+  :-ms-input-placeholder { /* IE 10+ */
+    font-weight: bold;
+    font-size:16px;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    font-weight: bold;
+    font-size:16px;
+  }
+#navbar .btn{
+    margin-top: 5px;
+    /* flex-basis: 7%; */
+}
+#navbar .add{
+    flex-basis: 5%;
+}
+.border{
+    
+    margin-top: 10px;
+}
+.inicio{
+    color:#333;
+   margin-bottom: 10px;
+    margin-left:10px;
+    flex-basis: 5%;
+    background: transparent;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius:20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.inicio:hover, .siguiendo:hover, .user:hover{
+    background: #efefef;
+}
+.siguiendo{
+    color:#8e8e8e;
+    margin-bottom: 10px;
+    margin-left:10px;
+    flex-basis: 8%;
+    background: transparent;
+    font-weight: bold;
+    border-radius:20px;
+    padding-left:5px;
+    padding-right: 5px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.user{
+    color:#8e8e8e;
+    margin-bottom: 10px;
+    margin-left:10px;
+    display: flex;
+    flex-basis: 8%;
+    background: transparent;
+    font-weight: bold;
+    border-radius:20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.userPic{
+    margin-left:4px;
+    height: 24px;
+    width: 24px;
+    border-radius:50%;
+    background: #8e8e8e;
+    color: white;
+}
+.userName{
+    margin-left:8px;
+}
+#navbar .message,#navbar .news, #navbar .add{
+    flex-basis: 4%;
+}
+.message{
+    margin-top:2px;
+    margin-left:20px;
+    display: flex;
+    padding:7px;
+    height: 48px;
+    width: 48px;
+    background: transparent;
+    border-radius:50%;
+    
+}
+.message:hover, .news:hover, .add:hover{
+    background: #efefef;
+}
+.news{
+    margin-top:2px;
+    margin-left:0px;
+    display: flex;
+    padding:7px;
+    height: 48px;
+    width: 48px;
+    background: transparent;
+    border-radius:50%;
+}
+.message img{
+    margin-left:5px;
+    width: 70%;
+}
+.news img{
+    margin-left:5px;
+    width: 70%;
+}
+.add img{
+    margin-left:5px;
+    width: 70%;
+}
+.add{
+    margin-top:2px;
+    margin-left:0px;
+    display: flex;
+    padding:7px;
+    height: 48px;
+    width: 48px;
+    background: transparent;
+    border-radius:50%;
+}

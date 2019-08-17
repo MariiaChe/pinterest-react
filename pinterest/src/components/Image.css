@@ -1,0 +1,55 @@
+ .imageItem{
+    width: 260px;
+    padding-bottom: 42px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top:8px;
+    border-radius:10px;
+    position: relative;
+}
+.imageItem:hover{
+    background: #efefef;
+}
+.imageItem .img{
+    border-radius:10px;
+    width: 100%;
+   
+}
+.imageItem .img:hover{
+    filter:brightness(0.7);
+}
+ .imageItem button{
+     height: 40px;
+     border-radius: 8px;
+     
+     font-weight: bold; 
+     width: 105px;
+     border: none;
+     color: white;
+     background: #c92228;
+     display:flex;
+     position: absolute;
+    
+   
+} 
+.imageItem button:hover{
+    filter:brightness(0.7);
+}
+.imageItem .pin{
+  
+    width: 18%;
+    margin-right: 5px;
+}
+.dots{
+    position: absolute;
+    width: 5%;
+    right: 20px;
+    bottom: 15px;
+}
+/* .imageItem:hover > .imageItem button{
+    background: blue; */
+    /* display:block;
+    position: absolute;
+    top:20px;
+    right: 20px; */
+  /* } */

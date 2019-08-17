@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import Navbar from './components/Navbar';
 import Image from './components/Image';
+import Modal from './components/Modal';
 //import MasonryInfiniteScroller from 'react-masonry-infinite';
 // import { Grid, GridItem } from 'react-masonry-infinite-scroll';
 import Masonry from 'react-masonry-css';
@@ -38,16 +39,23 @@ render(){
           <header>
             <Navbar/>
           </header>
+          {images.map(image=>
+          <Modal id={image.id} url={image.largeImageURL} />)}
           <div className="content container">
+            
           <Masonry
             breakpointCols={breakpointColumnsObj}
             className="my-masonry-grid"
             columnClassName="my-masonry-grid_column">
 
              {images.map(image=>
-             <Image key={image.id} url={image.largeImageURL} />
+             <Image dataToggle={image.id} key={image.id} url={image.largeImageURL} />
+         
+             
               )}
+             
             </Masonry>
+            
           </div>
         </React.Fragment>
       );

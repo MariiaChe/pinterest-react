@@ -16,6 +16,7 @@
    
 }
 .imageItem .img:hover{
+    cursor: zoom-in;
     filter:brightness(0.7);
 }
  .imageItem button{

@@ -41,11 +41,38 @@
     margin-right: 5px;
 }
 .dots{
+    /* position: absolute; */
+    width: 60%;
+    margin-left:5px;
+    margin-bottom:3px;
+    /* right: 10px;
+    bottom: 15px;
+    cursor: pointer; */
+}
+.circleDots{
+    
     position: absolute;
     width: 5%;
-    right: 20px;
-    bottom: 15px;
+    right: 10px;
+    bottom: 10px;
+    cursor: pointer;
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+ 
 }
+.circleDots:hover{
+    background: rgba(0, 0, 0, .06);
+}
+.share{
+    border-radius:50%;
+    width: 12%;
+    position: absolute;
+    right: 15px;
+    bottom: 48px;
+    cursor: pointer;
+}
+
 /* .imageItem:hover > .imageItem button{
     background: blue; */
     /* display:block;

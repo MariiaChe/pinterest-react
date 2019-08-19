@@ -19,7 +19,7 @@ class Navbar extends React.Component{
                         <div className="icon-search">
                             <img src={Search} alt="search"/>
                         </div>
-                        <input placeholder="Buscar" />
+                        <input type="text" placeholder="Buscar" onChange={(e)=>this.props.handleChange(e)} value={this.props.value}  onKeyPress={(e)=>this.props.handleKeyPress(e)} />
                     </div>
                     <div className="btn inicio">
                        Inicio

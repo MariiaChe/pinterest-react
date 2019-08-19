@@ -29,7 +29,7 @@ class Image extends React.Component{
             <React.Fragment>
                 <div  onMouseEnter={()=>this.toggleHover()} onMouseLeave={()=>this.toggleHover()} className="imageItem">
                     
-                    <img data-target=".bd-example-modal-lg" className="img" data-toggle={'#modal'+this.props.dataToggle} src={this.props.url} alt=""/>
+                    <img data-target={'#modal'+this.props.dataTarget} className="img" data-toggle='modal' src={this.props.url} alt=""/>
                     <button style={linkStyle}><img className="pin" src={Pin} />Guardar</button>
                     <div className="circleDots"><img className="dots" src={ Dots} /></div>
                     <img style={othLinkStyle} className="share" src={ Share } />

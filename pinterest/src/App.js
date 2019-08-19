@@ -10,9 +10,13 @@ class App extends React.Component {
   constructor(props){
     super(props);
     this.state={
-     images: []
+     images: [],
+     value:''
     }
+    this.handleKeyPress = this.handleKeyPress.bind(this);
+    this.handleChange= this.handleChange.bind(this);
 }
+
 componentDidMount(){
      this.fetchData(); 
 }
@@ -22,8 +26,19 @@ fetchData(){
     .then(data =>this.setState({images: data.hits}))
     .catch(error=>console.log('parsing failed', error))
 }
-
-
+handleChange (e) {    
+  const value = e.target.value;
+  this.setState({
+    value: value
+  })
+ 
+};
+handleKeyPress(e) {
+  if (e.key === 'Enter') {
+    
+    console.log('enter key pressed', this.state.value)
+  }
+}
 render(){
     const breakpointColumnsObj = {
       default: 4,
@@ -37,7 +52,7 @@ render(){
 
         <React.Fragment>
           <header>
-            <Navbar/>
+            <Navbar handleChange={this.handleChange} value={this.state.value} handleKeyPress={this.handleKeyPress} />
           </header>
           {images.map(image=>
           <Modal id={image.id} url={image.largeImageURL} />)}
@@ -49,7 +64,7 @@ render(){
             columnClassName="my-masonry-grid_column">
 
              {images.map(image=>
-             <Image dataToggle={image.id} key={image.id} url={image.largeImageURL} />
+             <Image dataTarget={image.id} key={image.id} url={image.largeImageURL} />
          
              
               )}

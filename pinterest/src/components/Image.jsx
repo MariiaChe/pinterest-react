@@ -21,9 +21,12 @@ class Image extends React.Component{
         if (this.state.hover) {
             linkStyle = {display:'flex', position: 'absolute', top:'15px',right: '15px'}
             othLinkStyle={display:'block'}
+          
           } else {
             linkStyle = {display:'none'}
             othLinkStyle={display:'none'}
+           
+            
           }
         return(
             <React.Fragment>
@@ -32,7 +35,7 @@ class Image extends React.Component{
                     <img data-target={'#modal'+this.props.dataTarget} className="img" data-toggle='modal' src={this.props.url} alt=""/>
                     <button style={linkStyle}><img className="pin" src={Pin} />Guardar</button>
                     <div className="circleDots"><img className="dots" src={ Dots} /></div>
-                    <img style={othLinkStyle} className="share" src={ Share } />
+                    <div style={othLinkStyle} className="share"><img src={ Share } /></div>
                 </div>
             </React.Fragment>
         )

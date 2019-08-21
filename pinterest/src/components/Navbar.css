@@ -141,7 +141,7 @@
     padding-top: 8px;
     padding-bottom: 8px;
 }
-#navbar .inicio:hover, .siguiendo:hover, .user:hover{
+#navbar .inicio:hover,#navbar .siguiendo:hover,#navbar .user:hover{
     background: #efefef;
 }
 #navbar .siguiendo{
@@ -196,7 +196,7 @@
     border-radius:50%;
     
 }
-#navbar .message:hover, .news:hover, .add:hover{
+#navbar .message:hover,#navbar .news:hover,#navbar .add:hover{
     background: #efefef;
 }
 #navbar .news{

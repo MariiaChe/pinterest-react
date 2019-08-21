@@ -11,33 +11,35 @@ class App extends React.Component {
     super(props);
     this.state={
      images: [],
-     value:''
+     query:''
     }
+  
+    
     this.handleKeyPress = this.handleKeyPress.bind(this);
     this.handleChange= this.handleChange.bind(this);
+    this.searchImg = this.searchImg.bind(this);
 }
 
 componentDidMount(){
-     this.fetchData(); 
+  this.searchImg(this.state.query)
 }
-fetchData(){
-    fetch('https://pixabay.com/api/?key=13297531-ab9a2b78d5fb940f06962f0ef&image_type=photo&orientation=vertical&per_page=200')
-    .then(response=> response.json())
-    .then(data =>this.setState({images: data.hits}))
-    .catch(error=>console.log('parsing failed', error))
-}
+
 handleChange (e) {    
-  const value = e.target.value;
-  this.setState({
-    value: value
-  })
- 
+  this.setState({query:e.target.value})
+  
 };
 handleKeyPress(e) {
   if (e.key === 'Enter') {
-    
-    console.log('enter key pressed', this.state.value)
+   this.searchImg(this.state.query)
+    console.log('enter key pressed', this.state.query)
+
   }
+}
+searchImg(query) {
+  fetch(`https://pixabay.com/api/?key=13297531-ab9a2b78d5fb940f06962f0ef&q=${query}&image_type=photo&orientation=vertical&per_page=200`)
+  .then(response=> response.json())
+  .then(data =>this.setState({images: data.hits}))
+  .catch(error=>console.log('parsing failed', error))
 }
 render(){
     const breakpointColumnsObj = {
@@ -52,10 +54,10 @@ render(){
 
         <React.Fragment>
           <header>
-            <Navbar handleChange={this.handleChange} value={this.state.value} handleKeyPress={this.handleKeyPress} />
+            <Navbar  handleChange={this.handleChange} handleKeyPress={this.handleKeyPress} />
           </header>
           {images.map(image=>
-          <Modal id={image.id} url={image.largeImageURL} />)}
+          <Modal id={image.id} url={image.webformatURL} />)}
           <div className="content container">
             
           <Masonry
@@ -64,7 +66,7 @@ render(){
             columnClassName="my-masonry-grid_column">
 
              {images.map(image=>
-             <Image dataTarget={image.id} key={image.id} url={image.largeImageURL} />
+             <Image dataTarget={image.id} key={image.id} url={image.webformatURL} />
          
              
               )}

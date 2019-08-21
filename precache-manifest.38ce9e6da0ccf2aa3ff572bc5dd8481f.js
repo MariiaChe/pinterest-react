@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4a266d84b00c8d788bf9944e2bfc465b",
+    "revision": "a0550cfd154c6b665d7ddb6eb36c226b",
     "url": "/pinterest-react/index.html"
   },
   {
-    "revision": "11556c9b44e49a93414f",
+    "revision": "e125c1c7b11bc5bdf93b",
     "url": "/pinterest-react/static/css/2.22a7d4ef.chunk.css"
   },
   {
-    "revision": "8e59cfd42b6c7d9db431",
+    "revision": "45ace32e74161ff621a7",
     "url": "/pinterest-react/static/css/main.c118a399.chunk.css"
   },
   {
-    "revision": "11556c9b44e49a93414f",
-    "url": "/pinterest-react/static/js/2.a719959a.chunk.js"
+    "revision": "e125c1c7b11bc5bdf93b",
+    "url": "/pinterest-react/static/js/2.63738eb2.chunk.js"
   },
   {
-    "revision": "8e59cfd42b6c7d9db431",
-    "url": "/pinterest-react/static/js/main.08bc803c.chunk.js"
+    "revision": "45ace32e74161ff621a7",
+    "url": "/pinterest-react/static/js/main.ecfe7dda.chunk.js"
   },
   {
     "revision": "c3071c6547994c276ef6",

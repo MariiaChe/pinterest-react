@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/pinterest-react/precache-manifest.fd73e17927beca58b03722b25d961155.js"
+  "/pinterest-react/precache-manifest.e2a514a8402138f1965d6c8326056610.js"
 );
 
 self.addEventListener('message', (event) => {

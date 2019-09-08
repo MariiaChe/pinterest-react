@@ -59,18 +59,18 @@ fetchData(){
 }
 showImg(){
   return(
-    this.state.images.map((image)=>{
+    this.state.images.map((image, index)=>{
       return(
-        <Image dataTarget={image.id} key={image.id} url={image.webformatURL} />
+        <Image dataTarget={image.id} key={index} url={image.webformatURL} />
       )
     })
   )
 }
 showModal(){
   return(
-    this.state.images.map((image)=>{
+    this.state.images.map((image, index)=>{
       return(
-        <Modal key={image.id} id={image.id} url={image.webformatURL} />
+        <Modal key={index} id={image.id} url={image.webformatURL} />
       )
     })
   )
@@ -96,7 +96,14 @@ render(){
           dataLength={this.state.images.length}
           next={this.fetchData}
           hasMore={true}
-          loader={<h4>Loading...</h4>}>
+          loader={<h4>Loading...</h4>}
+          endMessage={
+            <p style={{textAlign: 'center'}}>
+              <b>Yay! You have seen it all</b>
+            </p>
+          }
+          >
+            
             <Masonry
               breakpointCols={breakpointColumnsObj}
               className="my-masonry-grid"

@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a0550cfd154c6b665d7ddb6eb36c226b",
+    "revision": "d3a2eb40aaf4fa55135cbc00b8a7200e",
     "url": "/pinterest-react/index.html"
   },
   {
@@ -8,16 +8,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/pinterest-react/static/css/2.22a7d4ef.chunk.css"
   },
   {
-    "revision": "45ace32e74161ff621a7",
-    "url": "/pinterest-react/static/css/main.c118a399.chunk.css"
+    "revision": "249dcb1de7878180ac7b",
+    "url": "/pinterest-react/static/css/main.aaa000b3.chunk.css"
   },
   {
     "revision": "e125c1c7b11bc5bdf93b",
     "url": "/pinterest-react/static/js/2.63738eb2.chunk.js"
   },
   {
-    "revision": "45ace32e74161ff621a7",
-    "url": "/pinterest-react/static/js/main.ecfe7dda.chunk.js"
+    "revision": "249dcb1de7878180ac7b",
+    "url": "/pinterest-react/static/js/main.13676461.chunk.js"
   },
   {
     "revision": "c3071c6547994c276ef6",

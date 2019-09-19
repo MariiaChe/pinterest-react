@@ -65,7 +65,7 @@ class Navbar extends React.Component{
                     </div>
                     <hr/>
               
-                </div>
+                </div> 
                 
             </React.Fragment>
         )

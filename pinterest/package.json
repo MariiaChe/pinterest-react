@@ -19,7 +19,7 @@
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --coverage --watchAll=false",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -38,6 +38,9 @@
     ]
   },
   "devDependencies": {
-    "react-masonry-css": "^1.0.12"
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.15.1",
+    "react-masonry-css": "^1.0.12",
+    "react-test-renderer": "^16.10.2"
   }
 }

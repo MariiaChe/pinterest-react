@@ -225,6 +225,8 @@
     #navbar .userName,#navbar .message,#navbar .news,#navbar .add, #navbar .border,#navbar .siguiendo,#navbar .inicio{
         display: none;
     }
+   
+    
     
 }
 @media (min-width: 426px) and (max-width: 768px) {

@@ -12,7 +12,7 @@
     "react-infinite-scroller": "^1.2.4",
     "react-masonry-infinite": "^1.2.2",
     "react-masonry-infinite-scroll": "^1.1.1",
-    "react-scripts": "3.1.0"
+    "react-scripts": "5.0.1"
   },
   "scripts": {
     "predeploy": "npm run build",
